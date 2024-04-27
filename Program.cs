@@ -1,10 +1,11 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase3
+namespace guia1Variables
 {
     internal class Program
     {
@@ -72,6 +73,22 @@ namespace Clase3
             //5
             //Temperatura en grados Fahrenheit:
             //Ingresa una temperatura en grados celsius y conviertela a grados Fahrenheit.
+            int tempCelsius, tempFahren;
+
+            Console.WriteLine("Ingrese la temperatura en grados celsius");
+            tempCelsius = int.Parse(Console.ReadLine());
+            tempFahren = tempCelsius + 32;
+            Console.WriteLine("La temperatura equivalente en grados fahrenheit es: " + tempFahren);
+
+            //6
+            //Altura en pulgadas:
+            //Ingresa la altura en metros de una persona y muestra su equivalente en pulgadas.
+            double metrosPersona, pulgadasPersona;
+
+            Console.WriteLine("Ingrese los metros de la persona");
+            metrosPersona = double.Parse(Console.ReadLine());
+            pulgadasPersona = metrosPersona * 39.37;
+            Console.WriteLine("El equivalente a pulgadas es " + pulgadasPersona + " pulgadas");
 
             Console.ReadLine();
         }
