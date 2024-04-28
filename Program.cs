@@ -7,7 +7,7 @@ namespace guia1Variables
         static void Main(string[] args)
         {
             /*
-            Promedio de edades: Pregunta 
+            1)Promedio de edades: Pregunta 
             Ingresa las edades de tres personas y calcula el promedio de edad.
             */
             Console.WriteLine("Calculo de promedio de edades");
@@ -19,9 +19,10 @@ namespace guia1Variables
             //Console.WriteLine($"El promedio es {sumatoria}");  
             Console.WriteLine("las 3 edades son {0} {1} {2}", edad1, edad2, edad3);
 
-            //2
-            //Area de un rectangulo:
-            //Ingresa la base y la altura de un rectangulo y calcula su area.
+            /*
+            2)Area de un rectangulo:
+            Ingresa la base y la altura de un rectangulo y calcula su area.
+            */
             double vBase, vAltura;
             
             Console.WriteLine("Ingrese la base");
@@ -34,8 +35,7 @@ namespace guia1Variables
             Console.WriteLine("el area del rectangulo es " + area);
 
             /*
-            3
-            Descuento de una tienda:
+            3)Descuento de una tienda:
             Ingresa el precio original de un producto y el procentaje de descuento aplicado
             Calcula el precio con descuento y muestra el resultado.
             */
@@ -51,8 +51,7 @@ namespace guia1Variables
             Console.WriteLine("El precio final es: "+ precioConDesc);
 
             /*
-            4
-            Edades y sumatoria
+            4)Edades y sumatoria
             Ingrese las edades de tres personas y calcula la sumatoria de edad. 
             */
             int sumatoriaEdad;
@@ -72,8 +71,7 @@ namespace guia1Variables
             Console.WriteLine("La sumatoria de las edades es: " + sumatoriaEdad);
 
             /*
-            5
-            Temperatura en grados Fahrenheit:
+            5)Temperatura en grados Fahrenheit:
             Ingresa una temperatura en grados celsius y conviertela a grados Fahrenheit.
             */
             int tempCelsius, tempFahren;
@@ -83,9 +81,10 @@ namespace guia1Variables
             tempFahren = tempCelsius + 32;
             Console.WriteLine("La temperatura equivalente en grados fahrenheit es: " + tempFahren);
 
-            //6
-            //Altura en pulgadas:
-            //Ingresa la altura en metros de una persona y muestra su equivalente en pulgadas.
+            /*
+            6)Altura en pulgadas:
+            Ingresa la altura en metros de una persona y muestra su equivalente en pulgadas.
+            */
             double metrosPersona, pulgadasPersona;
 
             Console.WriteLine("Ingrese los metros de la persona");
@@ -93,9 +92,10 @@ namespace guia1Variables
             pulgadasPersona = metrosPersona * 39.37;
             Console.WriteLine("El equivalente a pulgadas es " + pulgadasPersona + " pulgadas");
 
-            //7)
-            //Calculo de IMC(Indice de masa corporal)
-            //Ingresa el peso en kilogramos y la altura en metros de una persona. Calcula su IMC y muestra el resultado.
+            /*
+            7)Calculo de IMC(Indice de masa corporal)
+            Ingresa el peso en kilogramos y la altura en metros de una persona. Calcula su IMC y muestra el resultado.
+            */
             double pesoKilos, alturaMetros, imc;
             
             Console.WriteLine("Ingrese el peso en kilos");
@@ -108,23 +108,24 @@ namespace guia1Variables
 
             Console.WriteLine("El IMC es: " +  imc);
 
-            //8)
-            //Edad de mascotas 
-            //Ingresa la edad en anios de una mascota y muestra su edad 
-            //equivalente en anios de humano (considerando una escala de
-            ////un anio de mascota = 7 anios de humano)
-
+            /*
+            8)Edad de mascotas 
+            Ingresa la edad en anios de una mascota y muestra su edad 
+            equivalente en anios de humano (considerando una escala de
+            un anio de mascota = 7 anios de humano)
+            */
             int aniosHumanos;
 
             Console.WriteLine("Ingrese la edad de la mascota");
             aniosHumanos = int.Parse(Console.ReadLine()) * 7;
             Console.WriteLine("La mascota tiene un equivalente a " + aniosHumanos + " anios humanos");
 
-            //9)Tiempo de viaje
-            //Ingresa la distancia en kilometros y la velocidad en kilometros por hora
-            //para un viaje.
-            //Calcula el tiempo total del viaje en horas.
-
+            /*
+            9)Tiempo de viaje
+            Ingresa la distancia en kilometros y la velocidad en kilometros por hora
+            para un viaje.
+            Calcula el tiempo total del viaje en horas.
+            */
             double distanciaKM, velocidadKM;
 
             Console.WriteLine("Ingrese la distancia en kilometros");
@@ -133,17 +134,18 @@ namespace guia1Variables
             velocidadKM = double.Parse(Console.ReadLine());
 
             Console.WriteLine("El tiempo total es de " + distanciaKM / velocidadKM + " horas");
-            /*10)
-            Duracion de una pelicula:
+            /*
+            10)Duracion de una pelicula:
             Ingresa la duracion en minutos de una pelicula y muestra la misma
             duracion en horas y minutos
             */
-            //11)
-            //Gastos de una salida:
-            //Ingresa el costo de la entrada de cine, el costo de la cena
-            //y el costo del transporte para una salida. Calcula el gasto total
-            //y muestra el resultado.
 
+            /*
+            11)Gastos de una salida:
+            Ingresa el costo de la entrada de cine, el costo de la cena
+            y el costo del transporte para una salida. Calcula el gasto total
+            y muestra el resultado.
+            */
             int costoCine, costoCena, costoTransporte, costoTotal;
             Console.WriteLine("Ingrese el valor de la entrada");
             costoCine = int.Parse( Console.ReadLine());
@@ -154,10 +156,10 @@ namespace guia1Variables
             costoTotal = costoCine + costoCena + costoTransporte;
             Console.WriteLine("El costo total es: " + costoTotal);
 
-            //12)
-            //Promedio de tres calificaciones:
-            //Ingresa tres calificaciones y calcula el promedio de las mismas
-
+            /*
+            12)Promedio de tres calificaciones:
+            Ingresa tres calificaciones y calcula el promedio de las mismas
+            */
             int nota1, nota2, nota3;
 
             Console.WriteLine("Ingrese la nota 1");
@@ -169,9 +171,11 @@ namespace guia1Variables
 
             Console.WriteLine("El promedio de las notas es: " + ((nota1 + nota2 + nota3) / 3));
 
-            //13)Perimetro de un triangulo:
-            //Ingresa las longitudes de los tres lados de un triangulo
-            //y calcula su perimetro.
+            /*
+            13)Perimetro de un triangulo:
+            Ingresa las longitudes de los tres lados de un triangulo
+            y calcula su perimetro.
+            */
             double longitud1, longitud2, longitud3;
             Console.WriteLine("Ingrese longitud lado 1");
             longitud1 = double.Parse(Console.ReadLine());
@@ -182,9 +186,11 @@ namespace guia1Variables
 
             Console.WriteLine("El perimetro del triangulo es:" + (longitud1 + longitud2 + longitud3));
 
-            //14)Cantidad de dolares en pesos argentinos.
-            //Ingresa la cotizacion del dolar y la cantidad de dolares a convertir
-            //Convierte la cantidad de dolares ingresada a pesos argentinos.
+            /*
+            14)Cantidad de dolares en pesos argentinos.
+            Ingresa la cotizacion del dolar y la cantidad de dolares a convertir
+            Convierte la cantidad de dolares ingresada a pesos argentinos.
+            */
             double cotizacionDolar, cantidadDolares;
             Console.WriteLine("Ingrese cotizacion del dolar");
             cotizacionDolar = double.Parse(Console.ReadLine());
@@ -194,18 +200,14 @@ namespace guia1Variables
 
 
 
-            //15)Area de un circulo
-            //Ingresa el radio de un circulo y calcula su area.
+            /*
+            15)Area de un circulo
+            Ingresa el radio de un circulo y calcula su area.
+            */
             double radio;
             Console.WriteLine("Ingrese el radio del circulo");
             radio = double.Parse(Console.ReadLine());
             Console.WriteLine("El area del circulo es " + 3.1416*radio*radio);
-
-
-
-
-
-
 
             Console.ReadLine();
         }
