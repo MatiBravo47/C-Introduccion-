@@ -1,10 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace guia1Variables
 {
@@ -12,15 +6,17 @@ namespace guia1Variables
     {
         static void Main(string[] args)
         {
-            //Promedio de edades: Pregunta 
-            //Ingresa las edades de tres personas y calcula el promedio de edad.
+            /*
+            Promedio de edades: Pregunta 
+            Ingresa las edades de tres personas y calcula el promedio de edad.
+            */
             Console.WriteLine("Calculo de promedio de edades");
             int edad1 = 15, edad2 = 23, edad3 = 42;
             double sumatoria = (edad1 + edad2 + edad3) / 3;
 
-            Console.WriteLine("el promedio es " + sumatoria);
+            Console.WriteLine("el promedio es " + sumatoria);           
             //Forma alternativa
-            //Console.WriteLine($"El promedio es {sumatoria}");
+            //Console.WriteLine($"El promedio es {sumatoria}");  
             Console.WriteLine("las 3 edades son {0} {1} {2}", edad1, edad2, edad3);
 
             //2
@@ -37,10 +33,12 @@ namespace guia1Variables
 
             Console.WriteLine("el area del rectangulo es " + area);
 
-            //3
-            //Descuento de una tienda:
-            //Ingresa el precio original de un producto y el procentaje de descuento aplicado
-            //Calcula el precio con descuento y muestra el resultado.
+            /*
+            3
+            Descuento de una tienda:
+            Ingresa el precio original de un producto y el procentaje de descuento aplicado
+            Calcula el precio con descuento y muestra el resultado.
+            */
             double precioOriginal, porcentajeDes, precioConDesc;
             
             Console.WriteLine("Ingrese el precio");
@@ -52,9 +50,11 @@ namespace guia1Variables
             
             Console.WriteLine("El precio final es: "+ precioConDesc);
 
-            //4
-            //Edades y sumatoria
-            //Ingrese las edades de tres personas y calcula la sumatoria de edad. 
+            /*
+            4
+            Edades y sumatoria
+            Ingrese las edades de tres personas y calcula la sumatoria de edad. 
+            */
             int sumatoriaEdad;
 
             Console.WriteLine("Calculo de promedio de edades");
@@ -71,9 +71,11 @@ namespace guia1Variables
             sumatoriaEdad = edad1 + edad2 + edad3;
             Console.WriteLine("La sumatoria de las edades es: " + sumatoriaEdad);
 
-            //5
-            //Temperatura en grados Fahrenheit:
-            //Ingresa una temperatura en grados celsius y conviertela a grados Fahrenheit.
+            /*
+            5
+            Temperatura en grados Fahrenheit:
+            Ingresa una temperatura en grados celsius y conviertela a grados Fahrenheit.
+            */
             int tempCelsius, tempFahren;
 
             Console.WriteLine("Ingrese la temperatura en grados celsius");
@@ -131,7 +133,11 @@ namespace guia1Variables
             velocidadKM = double.Parse(Console.ReadLine());
 
             Console.WriteLine("El tiempo total es de " + distanciaKM / velocidadKM + " horas");
-
+            /*10)
+            Duracion de una pelicula:
+            Ingresa la duracion en minutos de una pelicula y muestra la misma
+            duracion en horas y minutos
+            */
             //11)
             //Gastos de una salida:
             //Ingresa el costo de la entrada de cine, el costo de la cena
@@ -179,10 +185,21 @@ namespace guia1Variables
             //14)Cantidad de dolares en pesos argentinos.
             //Ingresa la cotizacion del dolar y la cantidad de dolares a convertir
             //Convierte la cantidad de dolares ingresada a pesos argentinos.
+            double cotizacionDolar, cantidadDolares;
+            Console.WriteLine("Ingrese cotizacion del dolar");
+            cotizacionDolar = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese cantidad de dolares");
+            cantidadDolares = double.Parse(Console.ReadLine());
+            Console.WriteLine("Corresponden a " + cotizacionDolar * cantidadDolares + " pesos");
+
 
 
             //15)Area de un circulo
             //Ingresa el radio de un circulo y calcula su area.
+            double radio;
+            Console.WriteLine("Ingrese el radio del circulo");
+            radio = double.Parse(Console.ReadLine());
+            Console.WriteLine("El area del circulo es " + 3.1416*radio*radio);
 
 
 
